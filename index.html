@@ -8,12 +8,21 @@
     <link rel="icon" href="" />
   </head>
   <body>
+    <div id="loader-wrapper">
+      <div class="loader"></div>
+    </div>
     <input type="text" id="input-field" placeholder="Bread" />
     <button id="add-button">Add to cart</button>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.jss" type="module"></script>
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        $('#loader-wrapper').fadeOut(700);
+      });
+    </script>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>

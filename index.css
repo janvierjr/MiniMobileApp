@@ -1,6 +1,7 @@
 /* //// ROOT VARIABLES  */
 :root {
-  --color: black;
+  --bg-color: black;
+  --color-white: white;
 }
 
 /* //// GLOBAL | site-wide */
@@ -43,8 +44,43 @@ h6 {
 
 html,
 body {
-  margin: 0;
   padding: 0;
+}
+
+/* //// LOADER  */
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader-wrapper {
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--color-white);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  margin-top: calc(50vh - 20px);
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
 }
 
 /* //// MAIN  */
