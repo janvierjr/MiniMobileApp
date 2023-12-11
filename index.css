@@ -1,9 +1,14 @@
 /* //// ROOT VARIABLES  */
 :root {
   --bg-color: #EEF0F4;
+  --bg-color-input: #DCE1EB;
   --bg-dark: #AC485A;
+  --color-black: #432000;
   --color-white: #FDFDFD;
   --font-family: 'Rubik', sans-serif;
+  --sm-font: .75rem;
+  --md-font: 1.25rem;
+  --lg-font: 1.75rem;
 }
 
 /* //// GLOBAL | site-wide */
@@ -29,6 +34,7 @@ button,
 textarea,
 select {
   font: inherit;
+  font-size: var(--md-font);
 }
 
 /*
@@ -47,6 +53,57 @@ h6 {
 html,
 body {
   padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+/* //// MAIN  */
+
+input {
+  width: 100%;
+  color: var(--color-black);
+  background-color: var(--bg-color-input);
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  color: var(--color-white);
+  background-color: var(--bg-dark);
+  margin: 1rem auto;
+  padding: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  margin: 5px;
+}
+
+.sm-image {
+  width: 100%;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4em 2em;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-center {
+  margin: 0 auto;
 }
 
 /* //// LOADER  */
@@ -84,5 +141,3 @@ body {
   -webkit-animation: rotation 1s linear infinite;
   animation: rotation 1s linear infinite;
 }
-
-/* //// MAIN  */

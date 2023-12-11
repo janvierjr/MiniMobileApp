@@ -15,8 +15,15 @@
     <div id="loader-wrapper">
       <div class="loader"></div>
     </div>
-    <input type="text" id="input-field" placeholder="Bread" />
-    <button id="add-button">Add to cart</button>
+    <main>
+      <section class="section">
+        <div class="container flex-col">
+          <img class="sm-image h-center" src="./assets/cat.png" alt="cat image"/>
+          <input type="text" id="input-field" placeholder="Bread" />
+          <button id="add-button">Add to cart</button>
+        </div>
+      </section>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"
@@ -26,7 +33,6 @@
         $('#loader-wrapper').fadeOut(700);
       });
     </script>
-
     <script src="index.js" type="module"></script>
   </body>
 </html>
