@@ -1,0 +1,50 @@
+/* //// ROOT VARIABLES  */
+:root {
+  --color: black;
+}
+
+/* //// GLOBAL | site-wide */
+/* resetting CSS margin: remove default margin on text tags */
+* {
+  margin: 0;
+}
+
+/*
+  Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove built-in form typography
+margin: remove default margin on text tags
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* //// MAIN  */
