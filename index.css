@@ -1,7 +1,9 @@
 /* //// ROOT VARIABLES  */
 :root {
-  --bg-color: black;
-  --color-white: white;
+  --bg-color: #EEF0F4;
+  --bg-dark: #AC485A;
+  --color-white: #FDFDFD;
+  --font-family: 'Rubik', sans-serif;
 }
 
 /* //// GLOBAL | site-wide */
@@ -60,7 +62,7 @@ body {
 }
 
 #loader-wrapper {
-  background-color: var(--bg-color);
+  background-color: var(--bg-dark);
   position: fixed;
   top: 0;
   left: 0;
